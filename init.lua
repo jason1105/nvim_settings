@@ -10,4 +10,15 @@ vim.g.localleader = "\\"
 require('vars')      -- Variables
 require('opts')      -- Options
 require('keys')      -- Keymaps
--- require('plug')      -- Plugins
+require('plug')      -- Plugins
+
+-- PLUGINS: Add this section
+require('nvim-tree').setup{}
+
+-- Add the block below
+require('lualine').setup {
+  options = {
+    theme = 'dracula-nvim'
+  }
+}
+require('nvim-autopairs').setup{}
